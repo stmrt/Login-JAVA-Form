@@ -6,7 +6,7 @@ import login.RegisterInfo;
 
 public class Login_page extends javax.swing.JFrame {
 
-  //
+  
     
     public Login_page() {     
         initComponents();
