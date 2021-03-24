@@ -11,7 +11,9 @@ public class Traitement {
             public void run() {
                 Login_page L1= new Login_page();
                 L1.setResizable(false);
-                L1.setVisible(true);
+                L1.setVisible(true);            
+             
+                
                 
                try {
         Class.forName("com.mysql.jdbc.Driver");

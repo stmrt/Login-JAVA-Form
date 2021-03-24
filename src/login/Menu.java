@@ -5,6 +5,8 @@
  */
 package login;
 
+import javax.swing.JFrame;
+
 /**
  *
  * @author Admin
@@ -27,15 +29,25 @@ public class Menu extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jScrollPane1 = new javax.swing.JScrollPane();
         jPanel1 = new javax.swing.JPanel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu2 = new javax.swing.JMenu();
-        jMenu3 = new javax.swing.JMenu();
+        jMenuItem1 = new javax.swing.JMenuItem();
         jMenu4 = new javax.swing.JMenu();
         jMenu5 = new javax.swing.JMenu();
         jMenu1 = new javax.swing.JMenu();
+        jMenu8 = new javax.swing.JMenu();
+        jMenu9 = new javax.swing.JMenu();
+        jMenu10 = new javax.swing.JMenu();
         jMenu6 = new javax.swing.JMenu();
+        jMenu11 = new javax.swing.JMenu();
+        jMenu12 = new javax.swing.JMenu();
+        jMenu13 = new javax.swing.JMenu();
         jMenu7 = new javax.swing.JMenu();
+        jMenu14 = new javax.swing.JMenu();
+        jMenu15 = new javax.swing.JMenu();
+        jMenu16 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -57,8 +69,13 @@ public class Menu extends javax.swing.JFrame {
 
         jMenu2.setText("Candidat");
 
-        jMenu3.setText("Ajout");
-        jMenu2.add(jMenu3);
+        jMenuItem1.setText("Ajout");
+        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem1ActionPerformed(evt);
+            }
+        });
+        jMenu2.add(jMenuItem1);
 
         jMenu4.setText("Suppression");
         jMenu2.add(jMenu4);
@@ -69,12 +86,42 @@ public class Menu extends javax.swing.JFrame {
         jMenuBar1.add(jMenu2);
 
         jMenu1.setText("Spécialité");
+
+        jMenu8.setText("Ajouter");
+        jMenu1.add(jMenu8);
+
+        jMenu9.setText("Suppression");
+        jMenu1.add(jMenu9);
+
+        jMenu10.setText("Liste");
+        jMenu1.add(jMenu10);
+
         jMenuBar1.add(jMenu1);
 
         jMenu6.setText("Fillières");
+
+        jMenu11.setText("Ajouter");
+        jMenu6.add(jMenu11);
+
+        jMenu12.setText("Suppression");
+        jMenu6.add(jMenu12);
+
+        jMenu13.setText("Liste");
+        jMenu6.add(jMenu13);
+
         jMenuBar1.add(jMenu6);
 
         jMenu7.setText("Help");
+
+        jMenu14.setText("Info");
+        jMenu7.add(jMenu14);
+
+        jMenu15.setText("HTTP://Site.com");
+        jMenu7.add(jMenu15);
+
+        jMenu16.setText("ETC...");
+        jMenu7.add(jMenu16);
+
         jMenuBar1.add(jMenu7);
 
         setJMenuBar(jMenuBar1);
@@ -92,6 +139,16 @@ public class Menu extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+        Modele mod = new Modele();
+        System.out.println("Button clicked");
+        CandidatAjout rgf=new CandidatAjout();
+        rgf.setVisible(true);
+        rgf.pack();
+        rgf.setLocationRelativeTo(null);
+        rgf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -130,13 +187,23 @@ public class Menu extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenu jMenu10;
+    private javax.swing.JMenu jMenu11;
+    private javax.swing.JMenu jMenu12;
+    private javax.swing.JMenu jMenu13;
+    private javax.swing.JMenu jMenu14;
+    private javax.swing.JMenu jMenu15;
+    private javax.swing.JMenu jMenu16;
     private javax.swing.JMenu jMenu2;
-    private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
     private javax.swing.JMenu jMenu5;
     private javax.swing.JMenu jMenu6;
     private javax.swing.JMenu jMenu7;
+    private javax.swing.JMenu jMenu8;
+    private javax.swing.JMenu jMenu9;
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
 }
