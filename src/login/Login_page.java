@@ -1,4 +1,4 @@
-package login;
+ package login;
 import java.awt.*;
 import javax.swing.JFrame;
 import login.RegisterInfo;
